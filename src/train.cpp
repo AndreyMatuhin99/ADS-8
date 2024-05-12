@@ -31,11 +31,13 @@ int Train::getLength() {
 
     int length = 0;
     Cage *current = first;
-    do {
+    while (current->next != first) {
         length++;
         current = current->next;
-    } while (current != first);
+    }
+    length++;
 
+    std::cout << "Length: " << length << std::endl;
     return length;
 }
 
