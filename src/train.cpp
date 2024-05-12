@@ -27,10 +27,8 @@ void Train::addCage(bool light) {
 }
 
 int Train::getLength() {
-    if (!first) {
-        std::cout << "Empty train!" << std::endl;
+    if (!first)
         return 0;
-    }
 
     int length = 0;
     Cage *current = first;
