@@ -32,17 +32,14 @@ int Train::getLength() {
 
     int length = 0;
     Cage *current = first;
-    while (current->next != first) {
+    do {
         length++;
         current = current->next;
-    }
-    length++;
+    } while (current != first);
 
-    std::cout << "Length: " << length << std::endl;
     return length;
 }
 
 int Train::getOpCount() {
-    std::cout << "Count of operations: " << countOp << std::endl;
     return countOp;
 }
