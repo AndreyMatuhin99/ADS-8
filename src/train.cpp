@@ -24,6 +24,7 @@ void Train::addCage(bool light) {
     }
 
     countOp++;
+    countOp++;
 }
 
 int Train::getLength() {
