@@ -37,9 +37,11 @@ int Train::getLength() {
         current = current->next;
     } while (current != first);
 
+    std::cout << "Length: " << length << std::endl;
     return length;
 }
 
 int Train::getOpCount() {
+    std::cout << "Count of operations: " << countOp << std::endl;
     return countOp;
 }
