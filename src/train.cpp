@@ -43,5 +43,6 @@ int Train::getLength() {
 }
 
 int Train::getOpCount() {
+    std::cout << "Count of operations: " << countOp << std::endl;
     return countOp;
 }
