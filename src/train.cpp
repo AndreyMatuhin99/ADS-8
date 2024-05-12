@@ -23,7 +23,7 @@ void Train::addCage(bool light) {
         first->prev = newCage;
     }
 
-    countOp++;
+    countOp += 2;
 }
 
 int Train::getLength() {
@@ -37,11 +37,9 @@ int Train::getLength() {
         current = current->next;
     } while (current != first);
 
-    std::cout << "Length: " << length << std::endl;
     return length;
 }
 
 int Train::getOpCount() {
-    std::cout << "Count of operations: " << countOp << std::endl;
     return countOp;
 }
