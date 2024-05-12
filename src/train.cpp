@@ -1,4 +1,5 @@
 // Copyright 2021 NNTU-CS
+#include <iostream>
 #include "train.h"
 
 Train::Train() {
